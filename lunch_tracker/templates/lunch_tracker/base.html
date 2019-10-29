@@ -1,0 +1,48 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <title>Lunch Tracker</title>
+    {% block styles %}
+    {% endblock %}
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>School Cafeteria</title>
+  <meta name="description" content="School cafeteria management program">
+  <meta name="author" content="John">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600" rel="stylesheet" type="text/css">
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:600,500,400" rel="stylesheet"  type="text/css">
+
+</head>
+<body>
+<header>
+  <!--put navigation here -->
+  <ul id="nav">
+	<li><a href="/customer_main">Home</a></li>
+	<li><a href="/calendar">Meal Calendar</a></li>
+    <li><a href="/edit_account">Edit Account</a></li>
+	<li><a href="/login">Logout</a></li>
+	<li><a href="/faq">FAQ</a></li>
+  </ul>
+</header>
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1>Page Title</h1>
+    <p class="center">Put stuff in here</p>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>
